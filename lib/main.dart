@@ -37,14 +37,15 @@ class MyApp extends StatelessWidget {
       // is not restarted.
       // primarySwatch: Colors.blue,
       // ),
-      home: const HelpPage(),
+      home: const IntroPage(),
 
       theme: LightMode,
-      // routes: {
-      //   '/help_page': (context) => const IntroPage(),
-      //   'shop_page': (context) => const ShopPage(),
-      //   'cart_page': (context) => const CartPage(),
-      // },
+      routes: {
+        '/help_page': (context) => const IntroPage(),
+        'shop_page': (context) => const ShopPage(),
+        'cart_page': (context) => const CartPage(),
+        'help_page' : (context) => const HelpPage()
+      },
     );
   }
 }
