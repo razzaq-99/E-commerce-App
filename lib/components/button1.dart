@@ -13,7 +13,8 @@ class Button1 extends StatelessWidget {
         child: child,
         padding: const EdgeInsets.all(25),
         decoration:  BoxDecoration(
-          color: Theme.of(context).colorScheme.primary,
+          // color: Theme.of(context).colorScheme.primary,
+          color: Colors.orange.shade600,
           borderRadius: BorderRadius.circular(12)
         ),
       ),

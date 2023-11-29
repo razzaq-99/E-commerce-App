@@ -4,6 +4,7 @@ import 'package:ecommerce_flutter/modules/shop1.dart';
 import 'package:ecommerce_flutter/pages/cart_page.dart';
 import 'package:ecommerce_flutter/pages/help_page.dart';
 import 'package:ecommerce_flutter/pages/intro_page.dart';
+import 'package:ecommerce_flutter/pages/login_page.dart';
 import 'package:ecommerce_flutter/pages/shop_page.dart';
 import 'package:ecommerce_flutter/themes/light_mode_theme.dart';
 import 'package:flutter/material.dart';
@@ -37,15 +38,15 @@ class MyApp extends StatelessWidget {
       // is not restarted.
       // primarySwatch: Colors.blue,
       // ),
-      home: const IntroPage(),
-
+      // home: const IntroPage(),
+        home:  LoginPage(),
       theme: LightMode,
-      routes: {
-        '/help_page': (context) => const IntroPage(),
-        'shop_page': (context) => const ShopPage(),
-        'cart_page': (context) => const CartPage(),
-        'help_page' : (context) => const HelpPage()
-      },
+      // routes: {
+      //   '/intro_page': (context) => const IntroPage(),
+      //   'shop_page': (context) => const ShopPage(),
+      //   'cart_page': (context) => const CartPage(),
+      //   'help_page' : (context) => const HelpPage()
+      // },
     );
   }
 }
