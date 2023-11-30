@@ -41,12 +41,12 @@ class MyApp extends StatelessWidget {
       // home: const IntroPage(),
         home:  LoginPage(),
       theme: LightMode,
-      // routes: {
-      //   '/intro_page': (context) => const IntroPage(),
-      //   'shop_page': (context) => const ShopPage(),
-      //   'cart_page': (context) => const CartPage(),
-      //   'help_page' : (context) => const HelpPage()
-      // },
+      routes: {
+        '/intro_page': (context) => const IntroPage(),
+        'shop_page': (context) => const ShopPage(),
+        'cart_page': (context) => const CartPage(),
+        'help_page' : (context) => const HelpPage()
+      },
     );
   }
 }

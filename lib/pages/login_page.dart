@@ -1,6 +1,9 @@
+import 'dart:js';
+
 import 'package:ecommerce_flutter/components/button2.dart';
 import 'package:ecommerce_flutter/components/my_textfield.dart';
 import 'package:ecommerce_flutter/components/square_tile.dart';
+import 'package:ecommerce_flutter/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -11,8 +14,9 @@ class LoginPage extends StatelessWidget {
   final passwordController = TextEditingController();
 
   // sign user in method
-  void signUserIn() {}
-
+  void signUserIn() {
+    Navigator.pushNamed(context as BuildContext, MaterialPageRoute(builder: (context)=> IntroPage()) as String);
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -44,7 +48,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 20),
 
               // username textfield
-              MyTextField(
+               MyTextField(
                 controller: usernameController,
                 hintText: 'Username',
                 obscureText: false,
@@ -53,7 +57,7 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 10),
 
               // password textfield
-              MyTextField(
+               MyTextField(
                 controller: passwordController,
                 hintText: 'Password',
                 obscureText: true,
@@ -78,10 +82,10 @@ class LoginPage extends StatelessWidget {
               const SizedBox(height: 20),
 
               // sign in button
-              MyButton(
-                onTap: signUserIn,
-              ),
-
+              // MyButton(
+                // onTap: Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => IntroPage()))
+              // ),
+              MyButton(onTap: signUserIn),
               const SizedBox(height: 40),
 
               // or continue with
@@ -152,6 +156,8 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
+
+
     );
   }
 }
