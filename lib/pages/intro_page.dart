@@ -30,7 +30,7 @@ class _IntroPageState extends State<IntroPage> {
               height: 10,
             ),
             Text(
-              "Premium Quality Products",style: TextStyle(fontSize: 15,fontWeight : FontWeight.w500,color: Theme.of(context).colorScheme.inversePrimary),
+              "Premium Quality Products",style: TextStyle(fontSize: 15,fontWeight : FontWeight.w800,color: Theme.of(context).colorScheme.inversePrimary),
             ),
             const SizedBox(
               height: 25,

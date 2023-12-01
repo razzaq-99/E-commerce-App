@@ -38,14 +38,15 @@ class MyApp extends StatelessWidget {
       // is not restarted.
       // primarySwatch: Colors.blue,
       // ),
-      // home: const IntroPage(),
-        home:  LoginPage(),
+      home:  LoginPage(),
+      //   home:  const IntroPage(),
       theme: LightMode,
       routes: {
-        '/intro_page': (context) => const IntroPage(),
-        'shop_page': (context) => const ShopPage(),
-        'cart_page': (context) => const CartPage(),
-        'help_page' : (context) => const HelpPage()
+        '/login_page' : (context) =>  LoginPage(),
+        // 'intro_page': (context) => const IntroPage(),
+        // 'shop_page': (context) => const ShopPage(),
+        // 'cart_page': (context) => const CartPage(),
+        // 'help_page' : (context) => const HelpPage()
       },
     );
   }
