@@ -1,6 +1,7 @@
 import 'package:ecommerce_flutter/components/list_tile.dart';
 import 'package:ecommerce_flutter/pages/cart_page.dart';
 import 'package:ecommerce_flutter/pages/help_page.dart';
+import 'package:ecommerce_flutter/pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -51,6 +52,16 @@ class MyDrawer extends StatelessWidget {
                     // Navigator.pushNamed(context, '/cart_page');
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => HelpPage()));
+                  }),
+
+              MyListTile(
+                  text: "logout",
+                  icon: Icons.logout_outlined,
+                  onTap: () {
+                    // Navigator.pop(context);
+                    // Navigator.pushNamed(context, '/cart_page');
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => LoginPage()));
                   }),
             ],
           ),

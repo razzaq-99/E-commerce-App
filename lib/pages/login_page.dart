@@ -5,6 +5,7 @@ import 'package:ecommerce_flutter/components/button2.dart';
 import 'package:ecommerce_flutter/components/my_textfield.dart';
 import 'package:ecommerce_flutter/components/square_tile.dart';
 import 'package:ecommerce_flutter/pages/intro_page.dart';
+import 'package:ecommerce_flutter/pages/register_page.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -89,7 +90,7 @@ class LoginPage extends StatelessWidget {
                   height: 55,
                   width: 320,
                   decoration: BoxDecoration(
-                    color: Colors.black,
+                    color: Colors.orange.shade700,
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Center(
@@ -166,7 +167,7 @@ class LoginPage extends StatelessWidget {
                     const SizedBox(width: 4),
                     InkWell(
                       onTap: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ))
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const RegisterPage()));
                       },
                       child: const Text(
                         'Register now',
